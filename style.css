@@ -1,0 +1,217 @@
+container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content max-content max-content;
+  grid-template-areas:
+    "header header header"
+    "main1 main2 main3"
+    "footer footer footer";
+}
+.header {
+  background: url(assets/Rectangle.png);
+  background-repeat: no-repeat;
+  border: 1 solid black;
+  width: 100vw;
+  height: 660px;
+  grid-area: header;
+}
+.nav {
+  display: flex;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 100px;
+}
+#Science,
+#Approach,
+#Applications,
+#Careers,
+#About {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  color: white;
+}
+#logo {
+  bottom: 1.98%;
+  margin-left: 60px;
+  margin-top: 32px;
+}
+.title {
+  margin-left: 4.17%;
+  top: 339px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+}
+.border_1 {
+  width: 427px;
+  border-bottom: 5px solid white;
+  margin-left: 60px;
+  margin-top: 140px;
+}
+.services {
+  display: flex;
+  text-decoration: none;
+  margin-left: 4.17%;
+  margin-top: 21px;
+  column-gap: 20px;
+}
+.vector {
+  width: 20px;
+  height: 16px;
+  margin-top: 4px;
+}
+#Join,
+#Watch {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.main {
+  display: grid;
+  width: 1440px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content;
+  grid-template-areas: "main1 main2 main3";
+  gap: 0px;
+}
+.topics {
+  align-items: start;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 48px;
+  color: #ffffff;
+
+  margin-top: 58px;
+  justify-content: start;
+}
+.border_2 {
+  display: block;
+  width: 360px;
+  border-bottom: 5px solid white;
+  margin-left: 60px;
+}
+.main1 {
+  background: url(assets/Rectangle1.png);
+  background-repeat: no-repeat;
+  width: 480px;
+  height: 729px;
+  grid-area: main1;
+  display: grid;
+  justify-items: center;
+}
+.main2 {
+  background: url(assets/Rectangle2.png);
+  background-repeat: no-repeat;
+  width: 480px;
+  display: grid;
+  height: 729px;
+  grid-area: main2;
+  display: grid;
+  justify-items: center;
+}
+.main3 {
+  background: url(assets/Rectangle3.png);
+  background-repeat: no-repeat;
+  width: 480px;
+  height: 729px;
+  grid-area: main3;
+  display: grid;
+  justify-items: center;
+}
+#Science_1,
+#Approach_1,
+#Applications_1 {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer {
+  background: url(assets/Rectangle4.png);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 982px;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: max-content max-content max-content max-content 1fr max-content;
+  grid-template-areas:
+    "topicfooter topicfooter . . . ."
+    "border_3 border_3 . . . ."
+    ". . . . . ."
+    "textfooter textfooter . . . ."
+    ". . . . . ."
+    "logofooter rights footlinks . . adress";
+}
+.topicfooter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 48px;
+  color: #ffffff;
+  grid-area: topicfooter;
+}
+.border_3 {
+  width: 426px;
+  border-bottom: 5px solid white;
+  margin-left: px;
+  grid-area: border_3;
+}
+.textfooter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  grid-area: textfooter;
+}
+#Reach {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.Reach {
+  grid-area: Reach;
+}
+.logofooter {
+  grid-area: logofooter;
+}
+.rights {
+  grid-area: rights;
+}
+.footlinks {
+  grid-area: footlinks;
+}
+.adress {
+  grid-area: adress;
+}
